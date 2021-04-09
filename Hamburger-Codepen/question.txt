@@ -1,0 +1,1 @@
+-em muốn làm cho cái menu sticky khi scroll lên top được mượt mà hơn á anh, giống như trong web mẫu á, em đã có thử transition Y để cho nó đầy lên nhưng vẫn kh được, nói chung em đã thử nhiều cách lắm rồi nhưng không biết sao

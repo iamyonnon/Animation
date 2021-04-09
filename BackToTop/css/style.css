@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+*:focus {
+  outline: 0;
+}
+* input::-webkit-outer-spin-button,
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  height: 300vh;
+  overflow-x: hidden;
+  background-size: cover;
+  background: url("/img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #eb3349;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #ffffff;
+}
+#myBtn i {
+  font-size: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+*:focus {
+  outline: 0;
+}
+* input::-webkit-outer-spin-button,
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::selection {
+  background-color: #f53a40;
+  color: #111;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-flow: column nowrap;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  max-width: 1000px;
+}
+.slideshow-container .itemSlides {
+  position: relative;
+}
+.slideshow-container .itemSlides span {
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  color: #fff;
+  user-select: none;
+}
+.slideshow-container .itemSlides img {
+  max-width: 1000px;
+}
+.slideshow-container .itemSlides p {
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+.slideshow-container .prev, .slideshow-container .next {
+  user-select: none;
+  padding: 15px 15px;
+  position: absolute;
+  top: 50%;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: inherit;
+  color: #fff;
+  z-index: 1000;
+  width: auto;
+  transition: all ease .6s;
+}
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all ease .6s;
+}
+.slideshow-container .prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.slideButton {
+  user-select: none;
+  text-align: center;
+}
+.slideButton span.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #111;
+  opacity: .6;
+  border-radius: 50%;
+  transition: all ease .6s;
+  cursor: pointer;
+  margin: 0 3px;
+}
+.slideButton span.dot:hover {
+  opacity: 1;
+  transition: all ease .6s;
+}
+.slideButton span.active {
+  opacity: 1;
+  transition: all ease .6s;
+}
+
+/*# sourceMappingURL=style.css.map */

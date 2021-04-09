@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #eb3349;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
+  background-color: pink;
+}
+
+.item {
+  position: relative;
+  width: 60px;
+  height: 50px;
+  background-color: #87e2e2;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(1, 1, 1, 0.3);
+}
+.item span {
+  height: 5px;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  background-color: #eb3349;
+}
+.item span.top {
+  top: 13px;
+}
+.item span.mid {
+  top: 23px;
+}
+.item span.bottom {
+  top: 33px;
+}
+
+.item-animation.active-in .top {
+  animation-name: top-in;
+  animation-duration: .4s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.48, -0.28, 0.41, 1.4);
+}
+.item-animation.active-in .mid {
+  animation-name: mid-in;
+  animation-duration: .2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.48, -0.28, 0.41, 1.4);
+}
+.item-animation.active-in .bottom {
+  animation-name: bottom-in;
+  animation-duration: .4s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.48, -0.28, 0.41, 1.4);
+}
+.item-animation.active-out .top {
+  animation-name: top-out;
+  animation-duration: .4s;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.48, -0.28, 0.41, 1.4);
+}
+.item-animation.active-out .mid {
+  animation-name: mid-out;
+  animation-duration: .2s;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.48, -0.28, 0.41, 1.4);
+}
+.item-animation.active-out .bottom {
+  animation-name: bottom-out;
+  animation-duration: .4s;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.48, -0.28, 0.41, 1.4);
+}
+
+@keyframes top-in {
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(10px) rotate(135deg);
+  }
+}
+@keyframes mid-in {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bottom-in {
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+}
+@keyframes top-out {
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(10px) rotate(135deg);
+  }
+}
+@keyframes mid-out {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bottom-out {
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
